@@ -19,6 +19,7 @@ describe('LocationStore', () => {
 
     it('the loading visual state should be triggered appropriately', () => {
         const loadingStore = useLoadingStore()
+        expect(loadingStore.isLoading).to.be.false;
         const locationStore = useLocationsStore();
         locationStore.fetchLocations()
         expect(loadingStore.isLoading).to.be.true;
@@ -27,7 +28,6 @@ describe('LocationStore', () => {
     it('checking the display options', () => {
         const locationStore = useLocationsStore();
         locationStore.fetchLocations();
-        console.log(locationStore.citiesDisplayOptions)
         expect(locationStore.citiesDisplayOptions).to.not.be.empty;
         // expect(locationStore.citiesDisplayOptions[0]).to.equal('----Any----');
     })
