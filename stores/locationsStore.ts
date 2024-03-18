@@ -2,7 +2,7 @@ import { useQuery } from '@vue/apollo-composable'
 import gql from 'graphql-tag'
 import { defineStore } from 'pinia'
 import { Ref, ref, watch } from 'vue'
-import { Facility, FacilitySearchFilters, Locale } from '~/typedefs/gqlTypes.js'
+import { Facility, FacilitySearchFilters, Locale } from '@/typedefs/gqlTypes.js'
 import { useLoadingStore } from './loadingStore.js'
 import { useLocaleStore } from './localeStore.js'
 

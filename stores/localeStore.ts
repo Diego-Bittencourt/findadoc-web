@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 import { ref, Ref } from 'vue'
-import { Locale } from '~/typedefs/gqlTypes.js'
+import { Locale } from '@/typedefs/gqlTypes.js'
 
 export type LocaleDisplay = {
     displayText: string,
