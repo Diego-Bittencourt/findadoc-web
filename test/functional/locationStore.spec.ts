@@ -2,11 +2,8 @@ import { setActivePinia, createPinia } from "pinia";
 import { useLocationsStore } from "@/stores/locationsStore";
 import { useLoadingStore } from '@/stores/loadingStore.js'
 import { expect } from 'chai';
-import { provideApolloClient } from "@vue/apollo-composable";
-import { initializeApollo } from "@/utils/apollo";
 
 describe('LocationStore', () => {
-    initializeApollo()
 
     beforeEach(() => {
         setActivePinia(createPinia())
@@ -29,6 +26,5 @@ describe('LocationStore', () => {
         const locationStore = useLocationsStore();
         locationStore.fetchLocations();
         expect(locationStore.citiesDisplayOptions).to.not.be.empty;
-        // expect(locationStore.citiesDisplayOptions[0]).to.equal('----Any----');
     })
 })
