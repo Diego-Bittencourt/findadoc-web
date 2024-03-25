@@ -134,6 +134,33 @@
         "research",
         "ideas"
       ]
+    },
+    {
+      "login": "NabbeunNabi",
+      "name": "William Brammer",
+      "avatar_url": "https://avatars.githubusercontent.com/u/124335161?v=4",
+      "profile": "https://github.com/NabbeunNabi",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Anissa3005",
+      "name": "Anissa Chadouli",
+      "avatar_url": "https://avatars.githubusercontent.com/u/114712265?v=4",
+      "profile": "https://github.com/Anissa3005",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "evan-desu",
+      "name": "Evan Peterson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/86333067?v=4",
+      "profile": "https://github.com/evan-desu",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -141,5 +168,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "projectName": "findadoc-web",
-  "projectOwner": "ourjapanlife"
+  "projectOwner": "ourjapanlife",
+  "commitType": "docs"
 }
