@@ -21,6 +21,7 @@ export const useSearchResultsStore = defineStore('searchResultsStore', () => {
     const searchLanguage: Ref<Locale | undefined> = ref()
 
     async function search(selectedSearchCity?: string, selectedSearchSpecialty?: Specialty, selectedSearchLanguage?: Locale) {
+        console.log(selectedSearchSpecialty)
         //set the loading visual state
         const loadingStore = useLoadingStore()
         loadingStore.setIsLoading(true)
@@ -54,6 +55,7 @@ export const useSearchResultsStore = defineStore('searchResultsStore', () => {
     }
 
     function setActiveSearchResult(selectedResultId: string) {
+        console.log("active search", selectedResultId)
         const newResult = searchResultsList.value.find(resultItem => resultItem.professional.id === selectedResultId)
 
         activeResult.value = newResult
